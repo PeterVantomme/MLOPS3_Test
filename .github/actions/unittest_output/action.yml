@@ -1,6 +1,6 @@
 # This file makes github actions understand that this is an action that should be ran with the defined Dockerfile
-name: "unittest_input"
-description: "Create a unit test for checking whether all required columns are in our input data"
+name: "unittest_output"
+description: "Create a unit test for checking whether all outputs are either 1 or 0"
 author: "Lukas.Mahieu@arinti.ai"
 
 runs:
