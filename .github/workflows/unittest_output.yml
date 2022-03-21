@@ -1,16 +1,16 @@
 # Name of workflow
-name: unittest_input
+name: unittest_output
 
 on:
   push:
     branches:
-      - 'unittest_input'
+      - 'unittest_output'
       - 'main'
     paths:
-      - 'data/raw/**.csv'
+      - 'data/output/**.csv'
   workflow_dispatch:
     branches:
-    - 'unittest_input'
+    - 'unittest_output'
     - 'main'
       
 jobs:
@@ -20,6 +20,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: input_test
-        uses: ./.github/actions/unittest_input
+      - name: output_test
+        uses: ./.github/actions/unittest_output
         
