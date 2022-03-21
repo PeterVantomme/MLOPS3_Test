@@ -1,7 +1,12 @@
 # This file makes github actions understand that this is an action that should be ran with the defined Dockerfile
 name: "unittest_output"
+<<<<<<< HEAD
 description: "Create a unit test for checking whether output consists solely of 0 or 1"
 author: "peter.vantomme3@gmail.com"
+=======
+description: "Create a unit test for checking whether all outputs are either 1 or 0"
+author: "Lukas.Mahieu@arinti.ai"
+>>>>>>> 5bb2f6bbe764694b4cc6817cd0d5fbff8118983f
 
 runs:
   using: "docker"
