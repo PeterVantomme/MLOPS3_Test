@@ -6,7 +6,7 @@ OUTPUT_COLUMNS = ["PassengerId","Survived"]
 def unittest_input_cols(df, cols, dataset_name):
 
     for row in df.iterrows():
-        assert row.loc[:,cols[1]] in [1,0] ,f"row with id {row[cols[0]]} has incorrect output format."
+        assert row[1] in [1,0] ,f"row with id {row[cols[0]]} has incorrect output format."
 
 def main():
     # Read data
